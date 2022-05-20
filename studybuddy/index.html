@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Buddy</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/base-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/grids-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/grids-responsive-min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
+</head>
+<body class="bg">
+    <div class="container">
+        <h1 class="heading-type">Study Buddy</h1>
+        <h2 class="heading-type">Create your own flashcards</h2>
+        <button class="btn-primary add" id="reveal">Add a question</button>
+        <div class="create-container card-type" id="create-container">
+            <div class="close" id="close-btn"></div>
+            <form class="question-form" id="question-form">
+                <ul>
+                    <li><input type="text" id="question" name="question" placeholder="Question" /></li>
+                    <li><input type="text" id="answer" name="answer" placeholder="Answer"/></li>
+                </ul>
+                <button class="btn-primary save" id="save">Save</button>
+            </form>
+        </div>
+        <div class="confirm-msg" id="confirm-msg">
+            <p>question added successfully</p>
+        </div>
+    </div>
+    <div class="container cards" id="card-container">
+        <!-- <div class="card">
+            <div class="inner-card">
+                <div class="front">
+                    <div class="close" id="delete-btn"></div>
+                    <div class="content">
+                        <h3>Q:</h3>
+                        <h4 id="question">Question goes here?</h4>
+                        <div class="buttons">
+                            <button class="btn-primary" id="check">Check</button>
+                            <button class="btn-front-secondary" id="edit">Edit</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="close" id="delete-btn"></div>
+                    <div class="content">
+                        <h3>A:</h3>
+                        <h4 id="answer">Answer goes here</h4>
+                        <div class="buttons">
+                            <button class="btn-primary" id="check">Check</button>
+                            <button class="btn-secondary" id="edit">Edit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>     -->
+            
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
